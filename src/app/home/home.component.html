@@ -1,0 +1,25 @@
+<!-- {{formation}} -->
+
+
+<h1>la liste du tableau est :</h1>
+<ul >
+    <li *ngFor="let element of tabElements">{{ element|first}}</li>
+</ul>
+<button class="btn btn-primary" (click)="cliquerici()">Cliquer Ici </button>
+<br/><br/>
+<table class="table" align ="center" border="1">
+    <tr>
+       <th>ID</th>
+       <th>NOM</th>
+       <th>VOLUME HORAIRE</th>
+    </tr>
+    <tr *ngFor="let cours of mesCours">
+    <td>{{cours.id}}</td>
+    <td>{{cours.nom}}</td>
+    <td>{{cours.vh}}</td>
+</tr>
+</table>
+
+<div>
+    <img src="huawei.png"/>
+</div>
